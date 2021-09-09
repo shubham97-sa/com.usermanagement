@@ -29,7 +29,7 @@ public  class AdminController {
     };
 
     @PostMapping("/admin/addUser")
-    public Users userDetails(@Valid @RequestBody Users users){
+    public Users userDetails(@RequestBody Users users){
         adminService.save(users);
         return users;
     };

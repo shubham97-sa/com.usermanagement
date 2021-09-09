@@ -11,13 +11,13 @@ public class Admins {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//,generator = "admins_id_seq")
-    //@SequenceGenerator(name ="admins_id_seq", sequenceName ="admins_id_seq" ,allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
 
     int id;
 
     @Column(name="admin_name")
-    @NotEmpty(message = "please enter valid admin name.....")
+
     String adminName;
 
     public Admins(){
